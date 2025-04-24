@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page - GateGPT</title>
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Left Side Text -->
+    <div class="left-section">
+      <h1 class="brand-name">GateGPT</h1>
+      <p class="tagline">
+        Crack GATE Smarter, Not Harder with your AI Study Buddy
+      </p>
+    </div>
+
+    <!-- Right Side Login Box -->
+    <div class="login-container">
+      <h2>Login</h2>
+      <form id="loginForm" onsubmit="return validateForm(event)">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <i class="fas fa-eye-slash toggle-password"></i>
+          </div>
+        </div>
+        
+        <button type="submit" class="btn">
+          <span>Login</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+        <div id="error-message" class="error-message"></div>
+      </form>
+      
+      <p class="redirect-link">
+        Don't have an account? <a href="registration_page.html">Register here</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

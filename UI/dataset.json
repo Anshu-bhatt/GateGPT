@@ -1,0 +1,817 @@
+{
+    "gate_exam": {
+      "year": 2024,
+      "branch": "Computer Science and Engineering",
+      "questions": [
+        {
+          "question_id": 1,
+          "question_text": "What is the worst-case time complexity of the QuickSort algorithm?",
+          "options": {
+            "A": "O(n log n)",
+            "B": "O(n^2)",
+            "C": "O(n)",
+            "D": "O(log n)"
+          },
+          "correct_answer": "B",
+          "explanation": "In the worst case, QuickSort performs O(n^2) comparisons when the pivot always results in the most unbalanced partitions.",
+          "topic": "Algorithms",
+          "type": "MCQ"
+        },
+        {
+          "question_id": 2,
+          "question_text": "Evaluate the integral ∫(2x dx) from 0 to 2.",
+          "numerical_answer": 4,
+          "explanation": "The integral of 2x is x^2. Evaluating from 0 to 2, we get 2^2 - 0^2 = 4.",
+          "topic": "Mathematics",
+          "type": "NAT"
+        },
+        {
+          "question_id": 3,
+          "question_text": "Which of the following are regular languages?",
+          "options": {
+            "A": "Set of all palindromes over {a, b}",
+            "B": "Set of all strings of even length over {a, b}",
+            "C": "Set of all binary strings with an equal number of 0s and 1s",
+            "D": "Set of all strings that do not contain the substring 'aa'"
+          },
+          "correct_answers": ["B", "D"],
+          "explanation": "Option B is regular because even-length strings can be represented by a finite state machine. Option D is also regular because it can be recognized by a DFA.",
+          "topic": "Theory of Computation",
+          "type": "MSQ"
+        },
+        {
+          "question_id": 4,
+          "question_text": "Which scheduling algorithm is non-preemptive?",
+          "options": {
+            "A": "Round Robin",
+            "B": "Shortest Remaining Time First",
+            "C": "First Come First Serve",
+            "D": "Multilevel Queue Scheduling"
+          },
+          "correct_answer": "C",
+          "explanation": "First Come First Serve (FCFS) is a non-preemptive scheduling algorithm where processes are scheduled in the order of arrival.",
+          "topic": "Operating Systems",
+          "type": "MCQ"
+        },
+        {
+            "question_id": 5,
+            "question_text": "What is the output of the following C code?\n\n```c\n#include <stdio.h>\nint main() {\n    int x = 5;\n    printf(\"%d\", x++ * ++x);\n    return 0;\n}\n```",
+            "options": {
+              "A": "30",
+              "B": "25",
+              "C": "Undefined behavior",
+              "D": "26"
+            },
+            "correct_answer": "C",
+            "explanation": "The behavior is undefined due to sequence point violation as x is being modified more than once within the same expression.",
+            "topic": "Programming & Data Structures",
+            "type": "MCQ"
+          },
+          {
+            "question_id": 6,
+            "question_text": "What is the probability of getting exactly two heads when flipping three fair coins?",
+            "numerical_answer": 0.375,
+            "explanation": "The sample space is {HHH, HHT, HTH, HTT, THH, THT, TTH, TTT}. The favorable cases are {HHT, HTH, THH}, which is 3 out of 8.",
+            "topic": "Discrete Mathematics",
+            "type": "NAT"
+          },
+          {
+            "question_id": 7,
+            "question_text": "Which of the following are properties of a binary search tree (BST)?",
+            "options": {
+              "A": "The left subtree contains only nodes with values less than the parent node.",
+              "B": "The right subtree contains only nodes with values greater than the parent node.",
+              "C": "There are no duplicate values in the BST.",
+              "D": "The height of a balanced BST is always O(n)."
+            },
+            "correct_answers": ["A", "B", "C"],
+            "explanation": "Options A, B, and C are properties of a BST. Option D is incorrect because the height of a balanced BST is O(log n), not O(n).",
+            "topic": "Data Structures",
+            "type": "MSQ"
+          },
+          {
+            "question_id": 8,
+            "question_text": "A CPU has a 5-stage pipeline. If a program has 100 instructions, how many cycles will it take to complete execution assuming no stalls?",
+            "numerical_answer": 104,
+            "explanation": "The first instruction takes 5 cycles to complete, and each subsequent instruction takes 1 cycle. Total cycles = (n + (k-1)) = 100 + 4 = 104.",
+            "topic": "Computer Organization",
+            "type": "NAT"
+          },
+          {
+            "question_id": 9,
+            "question_text": "Which of the following statements about NP-complete problems are true?",
+            "options": {
+              "A": "All NP-complete problems are solvable in polynomial time.",
+              "B": "If one NP-complete problem is solved in polynomial time, all NP-complete problems can be solved in polynomial time.",
+              "C": "NP-complete problems are a subset of NP-hard problems.",
+              "D": "The P vs NP question asks whether every problem in P is also in NP."
+            },
+            "correct_answers": ["B", "C"],
+            "explanation": "NP-complete problems are the hardest problems in NP, and if one can be solved in polynomial time, then all can be. NP-complete problems are also a subset of NP-hard problems.",
+            "topic": "Algorithms",
+            "type": "MSQ"
+          },
+          {
+            "question_id": 10,
+            "question_text": "A relation R is reflexive if and only if:",
+            "options": {
+              "A": "For every element a in the set, (a, a) '/∈' R.",
+              "B": "For every (a, b) in R, (b, a) '∈' R.",
+              "C": "For every (a, b) and (b, c) in R, (a, c) '∈' R.",
+              "D": "For every element a in the set, there exists b such that (a, b) ∈ R."
+            },
+            "correct_answer": "A",
+            "explanation": "A relation R is reflexive if every element is related to itself, meaning (a, a) ∈ R for all elements a.",
+            "topic": "Discrete Mathematics",
+            "type": "MCQ"
+          },
+          {
+            "question_id": 11,
+            "question_text": "What is the number of edges in a complete graph with 'n' vertices?",
+            "numerical_answer": "n*(n-1)/2",
+            "explanation": "A complete graph with 'n' vertices has edges between every pair of vertices. The number of edges is given by n(n-1)/2.",
+            "topic": "Graph Theory",
+            "type": "NAT"
+          },
+          {
+            "question_id": 12,
+            "question_text": "Which of the following protocols work at the transport layer of the OSI model?",
+            "options": {
+              "A": "TCP",
+              "B": "IP",
+              "C": "UDP",
+              "D": "FTP"
+            },
+            "correct_answers": ["A", "C"],
+            "explanation": "TCP and UDP are transport layer protocols, while IP is a network layer protocol and FTP is an application layer protocol.",
+            "topic": "Computer Networks",
+            "type": "MSQ"
+          },
+          {
+            "question_id": 13,
+            "question_text": "The decimal equivalent of the binary number 1011.01 is:",
+            "numerical_answer": 11.25,
+            "explanation": "1011 in decimal is 11 and .01 in binary represents 0.25, so the total value is 11.25.",
+            "topic": "Digital Logic",
+            "type": "NAT"
+          },
+          {
+            "question_id": 14,
+            "question_text": "What is the probability of getting at least one head when flipping two fair coins?",
+            "numerical_answer": 0.75,
+            "explanation": "The probability of getting no heads (only tails) is (1/2 * 1/2 = 1/4). Thus, the probability of getting at least one head is 1 - 1/4 = 3/4 = 0.75.",
+            "topic": "Probability and Statistics",
+            "type": "NAT"
+          },
+          {
+            "question_id": 15,
+            "question_text": "Which of the following are NP-complete problems?",
+            "options": {
+              "A": "Travelling Salesman Problem",
+              "B": "Boolean Satisfiability Problem (SAT)",
+              "C": "Dijkstra's Shortest Path Algorithm",
+              "D": "Subset Sum Problem"
+            },
+            "correct_answers": ["A", "B", "D"],
+            "explanation": "The Travelling Salesman Problem, SAT, and Subset Sum Problem are all NP-complete problems, while Dijkstra’s algorithm runs in polynomial time.",
+            "topic": "Complexity Theory",
+            "type": "MSQ"
+          },
+          {
+            "question_id": 16,
+            "question_text": "Which of the following are correct regarding AVL trees?",
+            "options": {
+              "A": "AVL tree is a self-balancing binary search tree.",
+              "B": "The height difference between left and right subtrees is at most 2.",
+              "C": "AVL trees provide better search performance than unbalanced binary search trees.",
+              "D": "Insertion and deletion in an AVL tree take O(log n) time."
+            },
+            "correct_answers": ["A", "C", "D"],
+            "explanation": "AVL trees are self-balancing BSTs with a height difference of at most 1 between left and right subtrees. They provide O(log n) search, insertion, and deletion.",
+            "topic": "Data Structures",
+            "type": "MSQ"
+          },
+          {
+            "question_id": 17,
+            "question_text": "Which of the following sorting algorithms is NOT stable?",
+            "options": {
+              "A": "Merge Sort",
+              "B": "Quick Sort",
+              "C": "Bubble Sort",
+              "D": "Insertion Sort"
+            },
+            "correct_answer": "B",
+            "explanation": "Quick Sort is not a stable sorting algorithm since it does not guarantee the relative order of equal elements.",
+            "topic": "Algorithms",
+            "type": "MCQ"
+          },
+          {
+            "question_id": 18,
+            "question_text": "What is the value of the determinant of the following matrix?\n\n| 2  3 |\n| 4  5 |",
+            "numerical_answer": -2,
+            "explanation": "Determinant = (2*5 - 3*4) = 10 - 12 = -2.",
+            "topic": "Mathematics",
+            "type": "NAT"
+          },
+          {
+            "question_id": 19,
+            "question_text": "Which of the following statements about context-free grammars (CFGs) are true?",
+            "options": {
+              "A": "All regular languages are context-free.",
+              "B": "All context-free languages are regular.",
+              "C": "Context-free languages can be recognized by pushdown automata.",
+              "D": "CFGs can generate palindromes."
+            },
+            "correct_answers": ["A", "C", "D"],
+            "explanation": "Regular languages are a subset of context-free languages, pushdown automata recognize context-free languages, and CFGs can generate palindromes.",
+            "topic": "Theory of Computation",
+            "type": "MSQ"
+          },
+          {
+            "question_id": 20,
+            "question_text": "Which CPU scheduling algorithm minimizes the average waiting time?",
+            "options": {
+              "A": "First Come First Serve (FCFS)",
+              "B": "Round Robin (RR)",
+              "C": "Shortest Job First (SJF)",
+              "D": "Priority Scheduling"
+            },
+            "correct_answer": "C",
+            "explanation": "Shortest Job First (SJF) minimizes the average waiting time by executing shorter jobs first.",
+            "topic": "Operating Systems",
+            "type": "MCQ"
+          },
+          {
+            "question_id": 21,
+            "question_text": "How many unique binary search trees (BSTs) can be formed with 4 distinct nodes?",
+            "numerical_answer": 14,
+            "explanation": "The number of unique BSTs is given by the Catalan number C(n) = (2n)! / ((n+1)! * n!), which for n=4 is 14.",
+            "topic": "Data Structures",
+            "type": "NAT"
+          },
+          {
+            "question_id": 22,
+            "question_text": "Which of the following are advantages of RAID-5?",
+            "options": {
+              "A": "Fault tolerance",
+              "B": "High read speed",
+              "C": "High write speed",
+              "D": "Minimum disk redundancy"
+            },
+            "correct_answers": ["A", "B"],
+            "explanation": "RAID-5 provides fault tolerance and improved read performance due to striping with parity, but write speeds are slower due to parity calculations.",
+            "topic": "Computer Organization",
+            "type": "MSQ"
+          },
+          {
+            "question_id": 23,
+            "question_text": "What is the time complexity of finding an element in an unbalanced binary search tree?",
+            "options": {
+              "A": "O(1)",
+              "B": "O(log n)",
+              "C": "O(n)",
+              "D": "O(n log n)"
+            },
+            "correct_answer": "C",
+            "explanation": "In the worst case, an unbalanced BST degenerates into a linked list, making search operations O(n).",
+            "topic": "Data Structures",
+            "type": "MCQ"
+          },
+          {
+            "question_id": 24,
+            "question_text": "How many different Hamiltonian cycles exist in a complete graph with 5 vertices?",
+            "numerical_answer": 12,
+            "explanation": "For a complete graph with n vertices, Hamiltonian cycles = (n-1)! / 2. For n=5, (4!)/2 = 12.",
+            "topic": "Graph Theory",
+            "type": "NAT"
+          },
+          {
+            "question_id": 25,
+            "question_text": "Which of the following protocols work at the transport layer of the OSI model?",
+            "options": {
+              "A": "TCP",
+              "B": "IP",
+              "C": "UDP",
+              "D": "FTP"
+            },
+            "correct_answers": ["A", "C"],
+            "explanation": "TCP and UDP operate at the transport layer, while IP is at the network layer and FTP at the application layer.",
+            "topic": "Computer Networks",
+            "type": "MSQ"
+          },
+          {
+            "question_id": 26,
+            "question_text": "What is the equivalent hexadecimal representation of the binary number 101011?",
+            "numerical_answer": "2B",
+            "explanation": "101011 in binary is equivalent to 2B in hexadecimal.",
+            "topic": "Digital Logic",
+            "type": "NAT"
+          },
+          {
+            "question_id": 27,
+            "question_text": "Which of the following SQL statements are correct?",
+            "options": {
+              "A": "SELECT * FROM table;",
+              "B": "DELETE FROM table WHERE condition;",
+              "C": "ALTER TABLE table ADD COLUMN;",
+              "D": "REMOVE table;"
+            },
+            "correct_answers": ["A", "B", "C"],
+            "explanation": "SQL uses SELECT, DELETE, and ALTER TABLE, but 'REMOVE' is not a valid SQL statement.",
+            "topic": "Databases",
+            "type": "MSQ"
+          },
+          {
+            "question_id": 28,
+            "question_text": "A Turing machine with infinite tape and finite states can solve which class of problems?",
+            "options": {
+              "A": "Regular languages",
+              "B": "Context-free languages",
+              "C": "Decidable problems",
+              "D": "All recursively enumerable languages"
+            },
+            "correct_answer": "D",
+            "explanation": "A Turing machine can recognize all recursively enumerable languages but not necessarily decide them.",
+            "topic": "Theory of Computation",
+            "type": "MCQ"
+          },
+          {
+            "question_id": 29,
+            "question_text": "Which of the following sorting algorithms has the best average-case time complexity?",
+            "options": {
+              "A": "Bubble Sort",
+              "B": "Insertion Sort",
+              "C": "Merge Sort",
+              "D": "Selection Sort"
+            },
+            "correct_answer": "C",
+            "explanation": "Merge Sort has an average-case time complexity of O(n log n), which is better than O(n^2) sorting algorithms like Bubble Sort and Insertion Sort.",
+            "topic": "Algorithms",
+            "type": "MCQ"
+          },
+          {
+            "question_id": 30,
+            "question_text": "What is the probability of drawing a red card from a standard deck of 52 playing cards?",
+            "numerical_answer": 0.5,
+            "explanation": "There are 26 red cards (hearts and diamonds) in a deck of 52. Probability = 26/52 = 0.5.",
+            "topic": "Mathematics",
+            "type": "NAT"
+          },
+          {
+            "question_id": 31,
+            "question_text": "Which of the following languages can be recognized by a pushdown automaton?",
+            "options": {
+              "A": "Regular languages",
+              "B": "Context-free languages",
+              "C": "Recursively enumerable languages",
+              "D": "Turing-decidable languages"
+            },
+            "correct_answers": ["B"],
+            "explanation": "A pushdown automaton (PDA) can recognize context-free languages, but not all recursively enumerable languages.",
+            "topic": "Theory of Computation",
+            "type": "MSQ"
+          },
+          {
+            "question_id": 32,
+            "question_text": "Which of the following page replacement algorithms suffers from Belady’s anomaly?",
+            "options": {
+              "A": "FIFO",
+              "B": "LRU",
+              "C": "Optimal Page Replacement",
+              "D": "Clock Algorithm"
+            },
+            "correct_answer": "A",
+            "explanation": "Belady's anomaly occurs in FIFO page replacement, where increasing the number of frames may increase page faults.",
+            "topic": "Operating Systems",
+            "type": "MCQ"
+          },
+          {
+            "question_id": 33,
+            "question_text": "How many spanning trees can be formed from a complete graph with 5 vertices?",
+            "numerical_answer": 125,
+            "explanation": "The number of spanning trees of a complete graph with n vertices is given by Cayley’s formula: n^(n-2). For n = 5, it's 5^3 = 125.",
+            "topic": "Graph Theory",
+            "type": "NAT"
+          },
+          {
+            "question_id": 34,
+            "question_text": "Which of the following protocols operate at the application layer of the OSI model?",
+            "options": {
+              "A": "HTTP",
+              "B": "FTP",
+              "C": "TCP",
+              "D": "DNS"
+            },
+            "correct_answers": ["A", "B", "D"],
+            "explanation": "HTTP, FTP, and DNS are application-layer protocols, whereas TCP operates at the transport layer.",
+            "topic": "Computer Networks",
+            "type": "MSQ"
+          },
+          {
+            "question_id": 35,
+            "question_text": "What is the binary representation of the decimal number 45?",
+            "numerical_answer": "101101",
+            "explanation": "The decimal number 45 converts to 101101 in binary.",
+            "topic": "Digital Logic",
+            "type": "NAT"
+          },
+          {
+            "question_id": 36,
+            "question_text": "Which of the following SQL operations delete all rows from a table but retain its structure?",
+            "options": {
+              "A": "DELETE",
+              "B": "DROP",
+              "C": "TRUNCATE",
+              "D": "ALTER"
+            },
+            "correct_answer": "C",
+            "explanation": "TRUNCATE removes all rows but retains the table structure, whereas DELETE removes specific rows, and DROP removes the entire table.",
+            "topic": "Databases",
+            "type": "MCQ"
+          },
+          {
+            "question_id": 37,
+            "question_text": "Which of the following scheduling algorithms can lead to starvation?",
+            "options": {
+              "A": "Round Robin",
+              "B": "Shortest Job First",
+              "C": "Priority Scheduling",
+              "D": "FCFS"
+            },
+            "correct_answers": ["B", "C"],
+            "explanation": "SJF and Priority Scheduling can lead to starvation if short or high-priority processes dominate execution.",
+            "topic": "Operating Systems",
+            "type": "MSQ"
+          },
+          {
+            "question_id": 38,
+            "question_text": "What is the result of the bitwise AND operation between 25 (11001) and 14 (01110)?",
+            "numerical_answer": 8,
+            "explanation": "25 (11001) AND 14 (01110) results in 00001000, which is 8 in decimal.",
+            "topic": "Digital Logic",
+            "type": "NAT"
+          },
+          {
+            "question_id": 39,
+            "question_text": "Which of the following are true for a deadlock to occur?",
+            "options": {
+              "A": "Mutual Exclusion",
+              "B": "Hold and Wait",
+              "C": "Preemption",
+              "D": "Circular Wait"
+            },
+            "correct_answers": ["A", "B", "D"],
+            "explanation": "Deadlock occurs when Mutual Exclusion, Hold and Wait, and Circular Wait conditions hold. Preemption prevents deadlock.",
+            "topic": "Operating Systems",
+            "type": "MSQ"
+          },
+          {
+            "question_id": 40,
+            "question_text": "Which of the following graph traversal techniques use a queue data structure?",
+            "options": {
+              "A": "Depth First Search",
+              "B": "Breadth First Search",
+              "C": "Dijkstra\\’s Algorithm",
+              "D": "Prim\\’s Algorithm"
+            },
+            "correct_answer": "B",
+            "explanation": "Breadth-First Search (BFS) uses a queue, while DFS uses a stack (or recursion).",
+            "topic": "Graph Theory",
+            "type": "MCQ"
+          },
+          {
+            "question_id": 41,
+            "question_text": "How many different binary search trees can be formed with 5 distinct nodes?",
+            "numerical_answer": 42,
+            "explanation": "The number of unique BSTs is given by the Catalan number: C(n) = (2n)! / ((n+1)! * n!). For n=5, the result is 42.",
+            "topic": "Data Structures",
+            "type": "NAT"
+          },
+          {
+            "question_id": 42,
+            "question_text": "Which of the following are NP-complete problems?",
+            "options": {
+              "A": "Hamiltonian Cycle",
+              "B": "Travelling Salesman Problem",
+              "C": "Minimum Spanning Tree",
+              "D": "Subset Sum Problem"
+            },
+            "correct_answers": ["A", "B", "D"],
+            "explanation": "Hamiltonian Cycle, TSP, and Subset Sum are NP-complete, while MST can be solved in polynomial time.",
+            "topic": "Algorithms",
+            "type": "MSQ"
+          },
+          {
+            "question_id": 43,
+            "question_text": "Which of the following sorting algorithms has the best average-case time complexity?",
+            "options": {
+              "A": "Bubble Sort",
+              "B": "Quick Sort",
+              "C": "Insertion Sort",
+              "D": "Selection Sort"
+            },
+            "correct_answer": "B",
+            "explanation": "Quick Sort has an average-case time complexity of O(n log n), which is better than O(n²) for Bubble, Insertion, and Selection Sort.",
+            "topic": "Algorithms",
+            "type": "MCQ"
+          },
+          {
+            "question_id": 44,
+            "question_text": "What is the number of simple graphs possible with 4 vertices?",
+            "numerical_answer": 16,
+            "explanation": "The number of simple graphs possible with n vertices is 2^(n(n-1)/2). For n=4, the result is 2^(4×3/2) = 2^6 = 64.",
+            "topic": "Graph Theory",
+            "type": "NAT"
+          },
+          {
+            "question_id": 45,
+            "question_text": "Which of the following statements about context-free grammars (CFGs) are correct?",
+            "options": {
+              "A": "All regular languages are context-free.",
+              "B": "All context-free languages can be recognized by a DFA.",
+              "C": "CFGs can generate non-regular languages.",
+              "D": "CFGs can be used to model arithmetic expressions."
+            },
+            "correct_answers": ["A", "C", "D"],
+            "explanation": "CFGs generate all regular languages and some non-regular languages. They are also used in parsing arithmetic expressions.",
+            "topic": "Theory of Computation",
+            "type": "MSQ"
+          },
+          {
+            "question_id": 46,
+            "question_text": "Which of the following memory management techniques leads to external fragmentation?",
+            "options": {
+              "A": "Paging",
+              "B": "Segmentation",
+              "C": "Virtual Memory",
+              "D": "Cache Memory"
+            },
+            "correct_answer": "B",
+            "explanation": "Segmentation leads to external fragmentation as variable-sized partitions leave unused spaces.",
+            "topic": "Operating Systems",
+            "type": "MCQ"
+          },
+          {
+            "question_id": 47,
+            "question_text": "Convert the decimal number 2024 into hexadecimal.",
+            "numerical_answer": "7E8",
+            "explanation": "The decimal number 2024 converts to hexadecimal as 7E8.",
+            "topic": "Digital Logic",
+            "type": "NAT"
+          },
+          {
+            "question_id": 48,
+            "question_text": "Which of the following protocols are used in the application layer of the OSI model?",
+            "options": {
+              "A": "HTTP",
+              "B": "SMTP",
+              "C": "TCP",
+              "D": "DNS"
+            },
+            "correct_answers": ["A", "B", "D"],
+            "explanation": "HTTP, SMTP, and DNS are application-layer protocols, whereas TCP operates at the transport layer.",
+            "topic": "Computer Networks",
+            "type": "MSQ"
+          },
+          {
+            "question_id": 49,
+            "question_text": "How many different Binary Search Trees (BSTs) can be formed with 5 distinct nodes?",
+            "numerical_answer": 42,
+            "explanation": "The number of unique BSTs with n nodes is given by the Catalan number: C(n) = (2n)! / ((n+1)! * n!). For n=5, the result is 42.",
+            "topic": "Data Structures",
+            "type": "NAT"
+          },
+          {
+            "question_id": 50,
+            "question_text": "Which of the following SQL commands are used for Data Definition Language (DDL)?",
+            "options": {
+              "A": "CREATE",
+              "B": "UPDATE",
+              "C": "ALTER",
+              "D": "DELETE"
+            },
+            "correct_answers": ["A", "C"],
+            "explanation": "CREATE and ALTER belong to DDL, whereas UPDATE and DELETE belong to DML.",
+            "topic": "Databases",
+            "type": "MSQ"
+          },
+          {
+            "question_id": 51,
+            "question_text": "Which of the following are true about pipelining in processors?",
+            "options": {
+              "A": "Increases instruction throughput",
+              "B": "May cause hazards",
+              "C": "Reduces instruction execution time",
+              "D": "Improves CPU clock speed"
+            },
+            "correct_answers": ["A", "B"],
+            "explanation": "Pipelining increases throughput but does not reduce individual instruction execution time. It may cause hazards.",
+            "topic": "Computer Organization",
+            "type": "MSQ"
+          },
+          {
+            "question_id": 52,
+            "question_text": "What is the worst-case time complexity of searching an element in a hash table with chaining?",
+            "options": {
+              "A": "O(1)",
+              "B": "O(n)",
+              "C": "O(log n)",
+              "D": "O(n log n)"
+            },
+            "correct_answer": "B",
+            "explanation": "In the worst case, all elements hash to the same bucket, leading to O(n) complexity.",
+            "topic": "Data Structures",
+            "type": "MCQ"
+          },
+          {
+            "question_id": 53,
+            "question_text": "What is the time complexity of Prim's algorithm using an adjacency matrix with a priority queue?",
+            "options": {
+              "A": "O(n log n)",
+              "B": "O(n^2)",
+              "C": "O(m log n)",
+              "D": "O(n log m)"
+            },
+            "correct_answer": "B",
+            "explanation": "Using an adjacency matrix, Prim's algorithm runs in O(n²) time complexity.",
+            "topic": "Graph Theory",
+            "type": "MCQ"
+          },
+          {
+            "question_id": 54,
+            "question_text": "How many different spanning trees can be formed from a complete graph with 5 vertices?",
+            "numerical_answer": 125,
+            "explanation": "For a complete graph with n vertices, the number of spanning trees is given by Cayley’s formula: T(n) = n^(n-2). For n=5, the result is 5^3 = 125.",
+            "topic": "Graph Theory",
+            "type": "NAT"
+          },
+          {
+            "question_id": 55,
+            "question_text": "Which of the following security mechanisms are used for authentication?",
+            "options": {
+              "A": "Biometric scanning",
+              "B": "Firewalls",
+              "C": "Passwords",
+              "D": "Encryption"
+            },
+            "correct_answers": ["A", "C"],
+            "explanation": "Authentication mechanisms include biometrics and passwords, while firewalls and encryption are security measures for protection and confidentiality.",
+            "topic": "Cybersecurity",
+            "type": "MSQ"
+          },
+          {
+            "question_id": 56,
+            "question_text": "Which of the following statements about AVL trees are correct?",
+            "options": {
+              "A": "An AVL tree is a self-balancing binary search tree.",
+              "B": "The height difference between left and right subtrees cannot exceed 1.",
+              "C": "Insertion in an AVL tree may require rebalancing via rotations.",
+              "D": "AVL trees always have a height of O(n)."
+            },
+            "correct_answers": ["A", "B", "C"],
+            "explanation": "AVL trees maintain balance by ensuring the height difference is at most 1, and rotations are used for rebalancing.",
+            "topic": "Data Structures",
+            "type": "MSQ"
+          },
+          {
+            "question_id": 57,
+            "question_text": "What is the minimum number of page frames required to prevent thrashing in a system using the Least Recently Used (LRU) page replacement algorithm?",
+            "numerical_answer": 4,
+            "explanation": "The minimum number of page frames needed to prevent thrashing is determined by the working set of a process, typically at least 4 in practical scenarios.",
+            "topic": "Operating Systems",
+            "type": "NAT"
+          },
+          {
+            "question_id": 58,
+            "question_text": "Which of the following are true about the RSA encryption algorithm?",
+            "options": {
+              "A": "It is an asymmetric key encryption algorithm.",
+              "B": "It is based on the difficulty of prime factorization.",
+              "C": "It requires the sender and receiver to share a secret key.",
+              "D": "It is used in digital signatures."
+            },
+            "correct_answers": ["A", "B", "D"],
+            "explanation": "RSA is an asymmetric algorithm based on prime factorization and is used in encryption and digital signatures.",
+            "topic": "Cryptography",
+            "type": "MSQ"
+          },
+          {
+            "question_id": 59,
+            "question_text": "Convert the decimal number 156 into its binary equivalent.",
+            "numerical_answer": "10011100",
+            "explanation": "156 in decimal converts to 10011100 in binary.",
+            "topic": "Digital Logic",
+            "type": "NAT"
+          },
+          {
+            "question_id": 60,
+            "question_text": "Which of the following scheduling algorithms suffer from starvation?",
+            "options": {
+              "A": "Shortest Job First (SJF)",
+              "B": "First Come First Serve (FCFS)",
+              "C": "Round Robin (RR)",
+              "D": "Priority Scheduling"
+            },
+            "correct_answers": ["A", "D"],
+            "explanation": "SJF and Priority Scheduling can cause starvation as shorter jobs and higher-priority tasks may continuously preempt others.",
+            "topic": "Operating Systems",
+            "type": "MSQ"
+          },
+          {
+            "question_id": 61,
+            "question_text": "Which of the following languages are regular?",
+            "options": {
+              "A": "Set of all strings over {a, b} where the number of a's is even.",
+              "B": "Set of all palindromes over {a, b}.",
+              "C": "Set of all binary strings where the number of 0s is equal to the number of 1s.",
+              "D": "Set of all strings that do not contain 'aa' as a substring."
+            },
+            "correct_answers": ["A", "D"],
+            "explanation": "Regular languages can be represented using finite automata. Palindromes and equal number of 0s and 1s require a PDA.",
+            "topic": "Theory of Computation",
+            "type": "MSQ"
+          },
+          {
+            "question_id": 62,
+            "question_text": "What is the subnet mask for a Class C network with 4 subnets?",
+            "options": {
+              "A": "255.255.255.0",
+              "B": "255.255.255.128",
+              "C": "255.255.255.192",
+              "D": "255.255.255.224"
+            },
+            "correct_answer": "C",
+            "explanation": "For 4 subnets in a Class C network, we need 2 bits for subnetting, leading to a mask of 255.255.255.192.",
+            "topic": "Computer Networks",
+            "type": "MCQ"
+          },
+          {
+            "question_id": 63,
+            "question_text": "How many different binary trees can be formed with 3 labeled nodes?",
+            "numerical_answer": 5,
+            "explanation": "The number of unique binary trees with n nodes is given by the Catalan number C(n) = (2n)! / ((n+1)! * n!), which for n=3 is 5.",
+            "topic": "Data Structures",
+            "type": "NAT"
+          },
+          {
+            "question_id": 64,
+            "question_text": "Which of the following protocols use the sliding window technique?",
+            "options": {
+              "A": "Stop-and-Wait ARQ",
+              "B": "Go-Back-N ARQ",
+              "C": "Selective Repeat ARQ",
+              "D": "HTTP"
+            },
+            "correct_answers": ["B", "C"],
+            "explanation": "Go-Back-N and Selective Repeat use the sliding window technique for flow control.",
+            "topic": "Computer Networks",
+            "type": "MSQ"
+          },
+          {
+            "question_id": 65,
+            "question_text": "What is the decimal equivalent of the hexadecimal number 2F?",
+            "numerical_answer": 47,
+            "explanation": "2F in hexadecimal is 2×16 + 15 = 32 + 15 = 47 in decimal.",
+            "topic": "Digital Logic",
+            "type": "NAT"
+          },
+          {
+            "question_id": 66,
+            "question_text": "Which of the following SQL operations modify the structure of a table?",
+            "options": {
+              "A": "ALTER TABLE",
+              "B": "UPDATE",
+              "C": "DROP TABLE",
+              "D": "TRUNCATE"
+            },
+            "correct_answers": ["A", "C"],
+            "explanation": "ALTER TABLE and DROP TABLE modify the structure of a table, whereas UPDATE modifies data, and TRUNCATE removes all rows.",
+            "topic": "Databases",
+            "type": "MSQ"
+          },
+          {
+            "question_id": 67,
+            "question_text": "A DFA (Deterministic Finite Automaton) can recognize which class of languages?",
+            "options": {
+              "A": "Regular languages",
+              "B": "Context-free languages",
+              "C": "Decidable languages",
+              "D": "Recursively enumerable languages"
+            },
+            "correct_answer": "A",
+            "explanation": "A DFA recognizes regular languages, which can be represented by regular expressions and finite state machines.",
+            "topic": "Theory of Computation",
+            "type": "MCQ"
+          },
+          {
+            "question_id": 68,
+            "question_text": "The number of connected components in an undirected graph with 10 vertices and 8 edges is at least:",
+            "numerical_answer": 3,
+            "explanation": "If a graph with 10 vertices has 8 edges, the minimum number of connected components is 3, assuming the edges are distributed optimally.",
+            "topic": "Graph Theory",
+            "type": "NAT"
+          }
+          
+      ]
+    }
+  }

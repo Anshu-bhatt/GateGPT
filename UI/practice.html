@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GATE Practice - GateGPT</title>
+    <link rel="stylesheet" href="practice.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script defer src="auth.js"></script>
+    <script defer src="practice.js"></script>
+    <!-- Jupyter Notebook Viewer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/notebook-js/1.5.0/notebook.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>GateGPT</h2>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="content.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="topic.html" class="nav-link">Topics</a></li>
+                <li class="nav-item"><a href="practice.html" class="nav-link active">Practice</a></li>
+                <li class="nav-item"><a href="resource.html" class="nav-link">Resources</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <div class="practice-header">
+                <h1>Practice Problems</h1>
+                <p class="subtitle">Solve GATE practice problems and see solutions</p>
+                <div class="practice-filters">
+                    <div class="filter-group">
+                        <input type="text" id="topicInput" placeholder="Enter topic (e.g., Data Structures, Algorithms)">
+                        <button id="searchBtn" class="btn">Search</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="practice-container">
+                <div class="notebook-container">
+                    <div id="notebook-viewer" class="notebook-viewer">
+                        <!-- Jupyter notebook will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

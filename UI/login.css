@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main Container */
+.container {
+  display: flex;
+  width: 70%;
+  max-width: 1500px;
+  height: 50vh;
+}
+
+/* Left Section - GateGPT Branding */
+.left-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+
+
+/* Right Section - Login Form */
+.login-container {
+  flex: 1;
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255, 0, 150, 0.8);
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Other Styles */
+h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #fff;
+}
+
+input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #252525;
+  color: #fff;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(45deg, #ff0099, #493240);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(45deg, #ff0099, #6e48aa);
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.redirect-link {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.redirect-link a {
+  text-decoration: none;
+  color: #ff0099;
+}
+
+.redirect-link a:hover {
+  text-decoration: underline;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade-out effect when redirecting */
+.fade-out {
+  animation: fadeOut 1s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+/* Pop effect for GateGPT */
+@keyframes popEffect {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes glowEffect {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 0, 150, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255, 0, 150, 1);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(255, 0, 150, 0.5);
+  }
+}
+
+.brand-name {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Times New Roman', sans-serif;
+  background: linear-gradient(45deg, #ff0099, #493240);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 200px;
+  margin-bottom: 20px;
+  animation: popEffect 1s ease-out, glowEffect 2s infinite alternate;
+}
+
+/* Split effect for Tagline */
+.tagline {
+  font-size: 18px;
+  color: white;
+  max-width: 600px;
+  margin-right: 200px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+
+

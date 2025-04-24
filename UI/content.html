@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GATE Exam Chatbot</title>
+    <link rel="stylesheet" href="content.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script defer src="auth.js"></script>
+    <!-- <script defer src="content.js"></script> -->
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>GateGPT</h2>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="content.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="topic.html" class="nav-link">Topics</a></li>
+                <li class="nav-item"><a href="practice.html" class="nav-link">Practice</a></li>
+                <li class="nav-item"><a href="resource.html" class="nav-link">Resources</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <h1>GATE Exam Chatbot</h1>
+            <p class="subtitle">Ask me anything about GATE topics!</p>
+            
+            <div class="chat-container">
+                <div id="chatContainer" class="chat-messages">
+                    <div class="message bot-message">
+                        <span class="message-label">Bot:</span>
+                        <div class="message-content">Hello! What do you want to learn?</div>
+                    </div>
+                </div>
+
+                <div class="chat-input-container">
+                    <div class="input-wrapper">
+                        <span class="input-label">Me:</span>
+                        <input type="text" id="userInput" placeholder="Type your question here...">
+                    </div>
+                    <button class="btn send-btn" onclick="sendMessage()">
+                        <span>Send</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!--extra code-->
+     <script>
+        async function sendMessage() {
+            const input = document.getElementById("userInput");
+            const message = input.value.trim();
+            if (!message) return;
+        
+            const chatBox = document.getElementById("chatContainer");
+        
+            // Display user message
+            chatBox.innerHTML += `
+                <div class="message user-message">
+                    <span class="message-label">You:</span>
+                    <div class="message-content">${message}</div>
+                </div>
+            `;
+            input.value = "";
+        
+            // Add loading spinner
+            const loadingId = "loading-" + Date.now();
+            chatBox.innerHTML += `
+                <div class="message bot-message" id="${loadingId}">
+                    <div class="loading-spinner"></div>
+                    <span class="message-label">Bot:</span>
+                    <div class="message-content">Thinking...</div>
+                </div>
+            `;
+            chatBox.scrollTop = chatBox.scrollHeight;
+        
+            try {
+                const res = await fetch("http://127.0.0.1:5000/chat", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ message })
+                });
+        
+                const data = await res.json();
+                const reply = data.reply || "Something went wrong.";
+        
+                // Replace loading with bot reply
+                document.getElementById(loadingId).innerHTML = `
+                    <span class="message-label">Bot:</span>
+                    <div class="message-content">${reply}</div>
+                `;
+                chatBox.scrollTop = chatBox.scrollHeight;
+            } catch (err) {
+                document.getElementById(loadingId).innerHTML = `
+                    <span class="message-label">Bot:</span>
+                    <div class="message-content">Error: ${err.message}</div>
+                `;
+            }
+        }
+        </script>
+
+</body>
+</html>

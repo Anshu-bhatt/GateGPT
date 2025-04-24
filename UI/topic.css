@@ -1,0 +1,267 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 250px;
+    background-color: #2d2d2d;
+    padding: 2rem;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    color: #ff0099;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.nav-menu {
+    list-style: none;
+}
+
+.nav-item {
+    margin-bottom: 1rem;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #3d3d3d;
+}
+
+.nav-link.active {
+    background-color: #ff0099;
+    color: #1a1a1a;
+}
+
+/* Main content styles */
+.main-content {
+    flex: 1;
+    margin-left: 250px;
+    padding: 2rem;
+    background-color: #1a1a1a;
+}
+
+/* Search bar styles */
+.search-container {
+    background-color: #2d2d2d;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    color: #ffffff;
+    background-color: #363636;
+    border: 2px solid #404040;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.search-input::placeholder {
+    color: #888;
+}
+
+.search-input:focus {
+    border-color: #ff0099;
+    box-shadow: 0 0 0 3px rgba(255, 0, 153, 0.2);
+}
+
+.search-input:focus::placeholder {
+    color: #ff0099;
+}
+
+.search-icon {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ff0099;
+    pointer-events: none;
+}
+
+h1 {
+    color: #ff0099;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.subtitle {
+    color: #cccccc;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+/* Topics container styles */
+.topics-container {
+    background-color: #2d2d2d;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.topics-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.topic-category {
+    background-color: #363636;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.topic-category h2 {
+    color: #ff0099;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #ff0099;
+    padding-bottom: 0.5rem;
+}
+
+.topic-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.topic-item {
+    background-color: #404040;
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.topic-item:hover {
+    transform: translateY(-5px);
+}
+
+.topic-item h3 {
+    color: #ff0099;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.topic-item ul {
+    list-style: none;
+}
+
+.topic-item li {
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.topic-item li::before {
+    content: "•";
+    color: #ff0099;
+    position: absolute;
+    left: 0;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2d2d2d;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff0099;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ff1493;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 1rem;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+    .topic-items {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .search-container {
+        padding: 1rem;
+    }
+
+    .search-input {
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+/* Animation for topic items */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.topic-item {
+    animation: fadeIn 0.5s ease forwards;
+} 
